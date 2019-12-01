@@ -8,11 +8,11 @@ I want to build a simple Deep Learning model for image classification on [Kaggle
 ![sample img](https://github.com/Insignite/Alexnet-DogvsCat-Classification/blob/master/img/2.PNG)
 
 After download and extract dataset from zip file, let's view the data.
-<img src="https://github.com/Insignite/Alexnet-DogvsCat-Classification/blob/master/img/1.PNG" height="65%" width="65%">
+<img src="https://github.com/Insignite/Alexnet-DogvsCat-Classification/blob/master/img/1.PNG" height="70%" width="70%">
 
 
 The dataset doesn't come with a label file. But I can extract the label from image name in train dataset.
-<img src="https://github.com/Insignite/Alexnet-DogvsCat-Classification/blob/master/img/3.PNG" height="65%" width="65%">
+<img src="https://github.com/Insignite/Alexnet-DogvsCat-Classification/blob/master/img/3.PNG" height="30%" width="30%">
 
  
 I apply data generator to provide variety to our train dataset which definitely will improve the model accuracy. This also "replicate" real world dataset because not all input image will be a perfect picture of a dog or a cat. Let's view a sample from our generator.
@@ -45,5 +45,12 @@ As mentioned, I will be using AlexNet architecture to build the model. AlexNet c
 
 ## Training
 I am using a Huaweii Matebook Pro with 8th Gen Intel- i7, 16GB RAM, NVIDIA GeForce MX150. Definitely not a good laptop to run any type of machine learning project so each epochs take me roughly 10-15 minutes. I decided to use small epochs but reasonable enough to get decent result. I tried out with 3, then 10, and finally 20 epochs. If you have a stronger hardware, increase to 50 or so definitely will yield a good result.
-<img src="" height="65%" width="65%">
+<img src="https://github.com/Insignite/Alexnet-DogvsCat-Classification/blob/master/img/5.PNG" height="65%" width="65%">
+
+Let's graph the train lost, train accuracy, validation lost, and validation accuracy for 20 epochs.
+<img src="https://github.com/Insignite/Alexnet-DogvsCat-Classification/blob/master/img/6.PNG" height="60%" width="60%">
+
+## Result
+Let's put some predicted result with image.
+
 
